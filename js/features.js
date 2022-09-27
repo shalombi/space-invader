@@ -3,7 +3,7 @@
 const TIME_TRIGGER_ROCKET = 5000
 const TIME_FREEZE_ALIENS = 5000
 const TINE_CANDY_REMOVE = 1500
-const TINE_CANDY_APPEAR = 3500
+const TINE_CANDY_APPEAR = 5000
 const SUPER_LASER_SIGN = '🗼';
 const NEGS_BOMB_SIGN = '☢️'
 const SHIELD_SIGN = '🛡'
@@ -62,7 +62,7 @@ function restartFreezeTextBtn() {
 function addAndRemoveCandy(board = gBoard) {
 
   if (gGame.isFreezeMode || !gGame.isOn || gIdxRowBottom < 1) return
-  if (isRowClean(board, 0)) var coord = getEmptyCell();
+  if (isRowClean(board, 0 && gIdxRowTop >= 1)) var coord = getEmptyCell();
   else return
 
   //ADD 

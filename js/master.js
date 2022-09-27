@@ -96,6 +96,7 @@ function updateDataAndDisplayLaserHit(pos, affectedElement, score = 0) {
     gGame.counterBunkersBuild--
   } else if (affectedElement === ALIEN) {
     gGame.alienBornCount--
+    // console.log(gGame.alienBornCount);
     gGame.isHitAlien = true;
   }
   gMaster.isShoot = false

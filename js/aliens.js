@@ -5,6 +5,7 @@ var gIntervalAliens;
 var gIdxRowBottom;
 var gIdxRowTop;
 
+
 function moveBoardAlienLeft(board = gBoard) {
   gIntervalAliens = setInterval(() => {
     if (gIdxRowBottom === board.length - 2) gameDone(false)
@@ -87,7 +88,6 @@ function moveAllAliensDown(board = gBoard, iStart, iEnd) {
   if (gGame.isGameOver || gGame.isFreezeMode) return;
   for (var i = iStart; i >= iEnd; i--) {
     for (var j = 1; j < board[0].length - 1; j++) {
-
       const currBoardCell = board[i][j]
       const nextBoardCell = board[i + 1][j]
       const currCoordsCell = { i, j }
@@ -105,7 +105,7 @@ function moveAllAliensDown(board = gBoard, iStart, iEnd) {
       updateCell({ i: i + 1, j: j }, ALIEN, ALIEN);
     }
   }
-
+  if (gIdxRowTop === 1) gCandyInterval = setInterval(addAndRemoveCandy, TINE_CANDY_APPEAR)
   if (isRowClean(gBoard, gIdxRowTop)) gIdxRowTop++
   if (isRowCleanFromBunkers(gBoard, gIdxRowBottom)) gIdxRowBottom++;
   if (gIdxRowBottom === board.length - 1) gameDone(false)

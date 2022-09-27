@@ -31,7 +31,6 @@ function startGame() {
     gGame.isOn = true
     moveBoardAlienLeft();
     gRocketsTriggerInterval = setInterval(getRocketTrigger, TIME_TRIGGER_ROCKET)
-    gCandyInterval = setInterval(addAndRemoveCandy, TINE_CANDY_APPEAR)
   }
 }
 
