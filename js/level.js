@@ -11,20 +11,20 @@ function getLevel(level = 'levelOne') {
   if (level === 'levelOne') {
     COUNT_ALIENS_ROW = 3;
     COUNT_ALIENS_COL = 5;
-    ALIEN_SPEED = 500
+    ALIEN_SPEED = 400
   } else if (level === 'levelTwo') {
     COUNT_ALIENS_ROW = 4;
     COUNT_ALIENS_COL = 5;
-    ALIEN_SPEED = 400
+    ALIEN_SPEED = 300
   } else if (level === 'levelThree') {
     COUNT_ALIENS_ROW = 5;
     COUNT_ALIENS_COL = 5;
-    ALIEN_SPEED = 300
+    ALIEN_SPEED = 200
   } else if (level === 'levelBunkers') {
     gIsBunkersLevel = true
     COUNT_ALIENS_ROW = 5;
     COUNT_ALIENS_COL = 3;
-    ALIEN_SPEED = 50
+    ALIEN_SPEED = 100
   }
   init();
   startGame();
