@@ -10,7 +10,7 @@ function playSoundStart() {
 
 function playSoundLaser() {
     if (!gIsGameWithSound) return
-    var laserSound = new Audio('sound/laser2.mp3');
+    var laserSound = new Audio('sound/laser.mp3');
     laserSound.play();
 }
 
