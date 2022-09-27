@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/img/alien_1.png">
+  <title>space invaders</title>
+</head>
+
+<body onkeyup="handleKey(event)" onload="init()">
+  <h1>Space Invaders</h1>
+
+  <button class="changeBackgroundBtn " onmousedown="changeBackgroundImage()">change background</button>
+  <button class="changeBackgroundBtn " onclick="restartAllPage()">reset page</button>
+  <!-- <button class="changeBackgroundBtn " onclick="speedAliens()">speed</button> -->
+
+
+  <div>
+    <button onclick="getLevel('levelOne')">level 1</button>
+    <button onclick="getLevel('levelTwo')">level 2</button>
+    <button onclick="getLevel('levelThree')">level 3</button>
+    <button onclick="getLevel('levelBunkers')">Bunkers</button>
+  </div>
+
+
+
+  <!-- ☢️☢️☢️🕳🕳🕳🪤🚨 -->
+  <div class="info">
+    <p class="super-mode">🗼:<span class="curr-super-mode">🗼🗼🗼</span></p>
+    <p class="shields">🛡:<span class="curr-shield">🛡🛡🛡</span></p>
+    <p class="livesFromRocket">🛰:<span class="currLives">🛰🛰🛰</span></p>
+    <p class="bombNegs">☢️:<span class="currBombNegs">☢️☢️☢️</span></p>
+  </div>
+
+  <div>
+    <button class=" freeze-mode" onclick="freezeMode(this)">freeze mode</button>
+    <button class="customize" onclick="customize()">customize</button>
+    <button class="startBtn" onmousedown="startGame()">start-customize</button>
+  </div>
+  <div>
+    <p class="score">score:<span class="curr-score"></span></p>
+  </div>
+
+  <div class="board-wrapper">
+    <table cellspacing="0">
+      <tbody class="board">
+        <p class=intro> <span class="introText">intro: </span> <br><br>(space+n) key - bomb negs <br> (space+x) key -
+          super
+          laser <br>
+          (z)
+          key - shield from rocks<br>(space) key - laser <br><br><span class="customizeFeatureTxt"> customize
+            feature:</span><br>
+          click on 'customize'
+          button,then,<br>(right click) - create an alien
+          <br>
+          (left click) - create an bunker.<br><br>then, click on 'start-customize' button for start
+          <br><br><span class="introTextStartGame"> please choose level option to start</span>
+        </p>
+      </tbody>
+      <p class=modalGameDone></p>
+    </table>
+  </div>
+
+
+  <div class="introAndModalDiv">
+  </div>
+
+
+  <script src="js/sound.js"></script>
+  <script src="js/aliens.js"></script>
+  <script src="js/master.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/gameDone.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/level.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

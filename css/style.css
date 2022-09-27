@@ -1,0 +1,204 @@
+* {
+    text-align: center;
+    margin: auto;
+    background-size: 30%;
+
+}
+
+body {
+    background: rgb(0, 0, 0);
+    /* background-image: url("https://wallpaperset.com/w/full/4/b/9/62917.jpg"); */
+    background-image: url("https://wallpaperset.com/w/full/6/3/d/62904.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    /* TODO: change all css definition because is PLASTER css ! !  */
+    transform: scale(45%);
+
+}
+
+h1 {
+    margin-top: 30;
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.cell {
+    font-size: 65px;
+    width: 89px;
+    height: 89px;
+    text-align: center;
+    background-color: rgba(246, 239, 239, 0.879);
+}
+
+.floor,
+.wall {
+    background-color: rgba(125, 4, 4, 0.752);
+    opacity: 0.76;
+}
+
+.board {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info,
+.modal {
+    /* margin-top: 20px; */
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+
+
+.score,
+.changeBackgroundBtn,
+.super-mode,
+.livesFromRocket,
+.shields,
+.bombNegs,
+.remaining-collisions {
+    background-color: rgb(235, 122, 23);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(24, 24, 68);
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-size: 50px;
+    width: 260px;
+    height: 70px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    opacity: 0.6;
+    margin-left: 10px;
+}
+
+.score,
+.changeBackgroundBtn {
+    background-color: rgb(0, 18, 136);
+    opacity: 0.5;
+    color: rgb(240, 225, 225);
+    font-size: 60px;
+    width: 406px;
+}
+
+.super-mode,
+.livesFromRocket,
+.shields,
+.bombNegs {
+    background-color: rgb(9, 9, 9);
+    color: #f0f1f1;
+    opacity: 0.8;
+    font-size: 70px;
+    width: 350px;
+    height: 100px;
+}
+
+
+button {
+    background-color: rgb(241, 225, 225);
+    border: 0 solid #e2e8f0;
+    font-weight: bolder;
+    color: #0d172a;
+    border-radius: 2rem;
+    transition: 0.3s;
+    font-size: 40px;
+    margin: 5px;
+    height: 70px;
+    width: 200px;
+    margin-top: 80px;
+    opacity: 0.76;
+}
+
+.restartBtn {
+    background-color: rgb(255, 0, 0);
+    color: #f0f1f1;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+button:hover {
+    background-color: #00094e;
+    font-size: 2rem;
+    width: 360px;
+    color: rgb(204, 204, 204);
+}
+
+.freeze-mode,
+.customize,
+.startBtn {
+    margin-top: 20px;
+    height: 90px;
+    width: 270px;
+    font-size: 30px;
+}
+
+.gameDoneMsg {
+    color: #e2e8f0;
+}
+
+.changeBackgroundBtn {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.bombCell {
+    background-color: darkred;
+}
+
+.livesFromRocket {
+    margin-right: 40px;
+}
+
+.super-mode {
+    margin-right: 40px;
+}
+
+.shields {
+    margin-right: 30px;
+}
+
+.modalGameDone,
+.intro {
+    left: calc(50% - 245px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    background-color: rgb(112, 108, 108);
+    position: absolute;
+    width: 530px;
+    height: 480px;
+    color: rgb(7, 12, 16);
+    font-size: 80px;
+    margin-top: 150px;
+    margin-right: 950px;
+    /* left: 45%; */
+    opacity: 0.8;
+    border-radius: 30px;
+    /* right: 57%; */
+}
+
+.modalGameDone {
+    height: 270px;
+}
+
+.intro {
+    display: block;
+    font-size: 35px;
+    height: 720px;
+    width: 500px;
+    background-color: rgb(2, 2, 91);
+    color: whitesmoke;
+    margin-bottom: 75px;
+}
+
+.introTextStartGame,
+.customizeFeatureTxt,
+.introText {
+    color: firebrick;
+    font-size: 32px;
+    font-weight: bolder;
+}
