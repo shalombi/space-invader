@@ -87,8 +87,6 @@ function laserHitsAlien(pos) {
   updateDataAndDisplayLaserHit(pos, ALIEN, 10)
   if (isRowClean(gBoard, pos.i)) gIdxRowBottom--;
   if ((!gGame.alienBornCount)) gameDone(true);
-  //Note: special case of feature ,It is not necessary except in a very specific case, The game AND gameDone function will work great even without the following line,try:)
-  if (gGame.alienBornCount === 1 && boardCleanFromAlien()) gameDone(true);
   return;
 }
 

@@ -8,7 +8,6 @@ var gGame;
 
 var gIsFirstClick = true
 
-
 function init() {
   gGame = { isGameOver: true, isOn: false, alienBornCount: 0, score: 0, isHitAlien: false, isFreezeMode: false, counterBunkersBuild: 0 };
   gBoard = createBoard();
@@ -31,9 +30,8 @@ function startGame() {
     gIsFirstClick = false
     gGame.isOn = true
     moveBoardAlienLeft();
-
     gRocketsTriggerInterval = setInterval(getRocketTrigger, TIME_TRIGGER_ROCKET)
-   gCandyInterval = setInterval(addAndRemoveCandy, TINE_CANDY_APPEAR)
+    gCandyInterval = setInterval(addAndRemoveCandy, TINE_CANDY_APPEAR)
   }
 }
 
@@ -46,4 +44,3 @@ function displayInformationInit() {
   document.querySelector('.modalGameDone').style.display = 'none';
   updateScore(0)
 }
-

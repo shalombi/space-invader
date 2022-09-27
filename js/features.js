@@ -30,7 +30,6 @@ function blowUpNegs(cellI, cellJ) {
       if (i === cellI && j === cellJ) continue;
       if (j < 0 || j >= gBoard[i].length) continue;
       playSoundNegs()
-      // ALIEN = (i % 2 === 0) ? ALIEN1 : ALIEN2
       ALIEN = setGeneralAlienByRowIndex(i)
       if (gBoard[i][j].gameElement === ALIEN) {
         updateCell({ i, j });
@@ -218,8 +217,10 @@ function createAlien(elBtn, i, j) {
   if (gIsFirstClickToCustomize) {
     gIdxRowTop = +prompt('enter the start row  to locate aliens please:')
     gIdxRowBottom = +prompt('enter the end row  to locate aliens please:')
+
     ALIEN_SPEED = +prompt('enter the speed of aliens please:')
   }
+
   gIsFirstClickToCustomize = false
   ALIEN = setGeneralAlienByRowIndex(i)
   updateCell({ i, j }, ALIEN, ALIEN)
@@ -238,7 +239,7 @@ function customize() {
 //background image 
 function changeBackgroundImage() {
   if (!gIsBackgroundChanged) document.body.style.backgroundImage = "url('https://wallpaperset.com/w/full/2/0/c/62836.jpg')"
-  if (gIsBackgroundChanged) document.body.style.backgroundImage = "url('https://wallpaperset.com/w/full/6/3/d/62904.jpg')"
+  else if (gIsBackgroundChanged) document.body.style.backgroundImage = "url('https://wallpaperset.com/w/full/6/3/d/62904.jpg')"
   gIsBackgroundChanged = !gIsBackgroundChanged
 }
 

@@ -1,7 +1,5 @@
 var gIsGameWithSound = true
 
-
-
 function playSoundStart() {
     if (!gIsGameWithSound) return
     var startGameSound = new Audio('sound/musicGame.mp3');

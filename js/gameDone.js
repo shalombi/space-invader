@@ -9,10 +9,8 @@ function gameDone(isWin) {
   gGame.isOn = false
 
   //SOUND
-
     if (gMaster.isWin) playWin()
     else playSoundGameOver()
-
 
   //DOM
   var elModal = document.querySelector('.modalGameDone');

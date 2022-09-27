@@ -51,7 +51,6 @@ function handleKey(ev) {
   }
 }
 
-
 function updateCell(pos, gameElement = null, display = '') {
   gBoard[pos.i][pos.j].gameElement = gameElement;
 
@@ -176,3 +175,4 @@ function cleanRocketRow(row, board = gBoard) {
     }
   }
 }
+

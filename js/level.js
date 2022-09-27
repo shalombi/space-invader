@@ -4,7 +4,6 @@ function getLevel(level = 'levelOne') {
   if (gGame.isOn) return
   gLevelChosen = true
 
-
   if (gGame.isFreezeMode) restartFreezeTextBtn()
   if (gIsCustomize) gIsCustomize = false
   clearMyIntervals()
