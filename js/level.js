@@ -11,7 +11,7 @@ function getLevel(level = 'levelOne') {
   if (level === 'levelOne') {
     COUNT_ALIENS_ROW = 3;
     COUNT_ALIENS_COL = 5;
-    ALIEN_SPEED = 1000
+    ALIEN_SPEED = 800
   } else if (level === 'levelTwo') {
     COUNT_ALIENS_ROW = 4;
     COUNT_ALIENS_COL = 5;
