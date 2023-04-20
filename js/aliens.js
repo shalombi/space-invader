@@ -1,6 +1,6 @@
 var COUNT_ALIENS_ROW = 3;
 var COUNT_ALIENS_COL = 6;
-var ALIEN_SPEED = 1500;
+var ALIEN_SPEED = 2500;
 var gIntervalAliens;
 var gIdxRowBottom;
 var gIdxRowTop;
